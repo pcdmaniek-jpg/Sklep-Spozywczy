@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #283048, #859398);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.container {
+  background: rgba(0,0,0,0.7);
+  border-radius: 15px;
+  max-width: 600px;
+  width: 100%;
+  padding: 30px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.8);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #6a0fff;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: rotate(10deg) scale(1.05);
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.contact-info a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.btn-facebook {
+  display: inline-block;
+  background-color: #6a0fff;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 20px;
+}
+.btn-facebook:hover {
+  background-color: #8a3fff;
+  transform: scale(1.05);
+}
+
+/* Social media */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.social-icons a {
+  color: white;
+  font-size: 2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.social-icons a:hover {
+  color: #8a3fff;
+  transform: scale(1.2);
+}
+
+/* Responsywność */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  .description, .contact-info {
+    font-size: 1rem;
+  }
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+}
